@@ -96,7 +96,7 @@ def MLPRegression(ftype = None):
     return None
 
 
-def adjustMLPRegressorValues(y_pred, ftype = None):
+def adjustRegressorValues(y_pred, ftype = None):
     if ftype == 'final':
         y_pred[y_pred<0] = -1
         y_pred[y_pred>=0] = 1
