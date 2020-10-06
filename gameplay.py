@@ -1,3 +1,4 @@
+import numpy as np
 def printboard(board):
     tmp=[[]]
     for i in range(9):

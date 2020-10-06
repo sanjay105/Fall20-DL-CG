@@ -30,7 +30,7 @@ def MLPClassification(ftype = None):
     :param ftype: file type to read. ftype takes {'single', 'multi', 'final}
     :return: a classifier that is trained using StratifiedKfold cross validation
     '''
-    X,y = read_data('/datasets-part1/tictac_'+ftype+'.txt', ftype)
+    X,y = read_data('datasets-part1/tictac_'+ftype+'.txt', ftype)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     if ftype == 'single':
         skf = StratifiedKFold(n_splits=10, random_state = 777, shuffle=True)
@@ -76,7 +76,7 @@ def MLPRegression(ftype = None):
     :param ftype: file type to read. ftype takes {'single', 'multi', 'final}
     :return: a regressor that is trained using StratifiedKfold cross validation
     '''
-    X,y = read_data('/datasets-part1/tictac_'+ftype+'.txt', ftype)
+    X,y = read_data('datasets-part1/tictac_'+ftype+'.txt', ftype)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     if ftype == 'single' or ftype == 'final':
         skf = StratifiedKFold(n_splits=10, random_state = 777, shuffle=True)
