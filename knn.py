@@ -9,9 +9,11 @@ from sklearn import svm
 # import some validation tools
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import RepeatedKFold
+from sklearn.model_selection import RepeatedKFold 
 from sklearn.metrics import confusion_matrix,classification_report
 import warnings
+
+from gameplay import game
 
 
 classification_neighbors=1
@@ -73,8 +75,12 @@ def knn():
     knn_multi_regressor_model=perform_regression('datasets-part1/tictac_multi.txt')
     return [knn_single_classifier_model,knn_multi_classifier_model,knn_final_classifier_model,knn_multi_regressor_model]
 
+
+        
+
 def main():
-    print(knn())
+    scm,mcm,fcm,mrm=knn()
+    game(scm)
 
 
 if __name__ == "__main__":
