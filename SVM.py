@@ -154,14 +154,23 @@ def svm_classifier(data_file):
     
     # Start point time
     start = time()
-    if data_file == "datasets-part1/tictac_final.txt":
+    if 'final' in data_file :
         accuracy, confusion_mtrx, svm = svm_final(X, y)
-    elif data_file == "datasets-part1/tictac_single.txt":
+    elif 'single' in data_file:
         accuracy, confusion_mtrx, svm = svm_single(X, y)
     else:
         accuracy, svm = svm_multi(X, y)
         multi = True
         confusion_mtrx = 0
+
+    # Printing the results
+    print("*"*100)
+    print("Accuracy for SVM Classification on ",data_file," dataset: ",accuracy)
+    if not multi:
+        print("Confusion Matrix:")
+        print(confusion_mtrx)
+    print("*"*100)
+
     # End point time
     end = time()
     
@@ -177,7 +186,7 @@ def main():
     svm_classifier("datasets-part1/tictac_multi.txt")
     
 # if __name__ == "__main__":
-  #  main()
+#    main()
 
 
 

@@ -33,8 +33,8 @@ def mlr_results(dataset, accuracy, time_taken):
     """ Printing result sets to the terminal """
     print("-----------------------Linear Regressor Results on {}---------------------------\n".format(dataset))
     print("Accuracy for Linear Regressor on {}: {}\n".format(dataset, accuracy*100))
-    print_stars()
-    print("Total time to run the Linear Regressor on {}: {} seconds\n".format(dataset, time_taken))
+    # print_stars()
+    # print("Total time to run the Linear Regressor on {}: {} seconds\n".format(dataset, time_taken))
     print_stars()
 
 def multiple_linear_regression(X, y):
