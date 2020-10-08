@@ -3,7 +3,7 @@ from MultiLayerPerceptron import MLPClassification,MLPRegression
 from knn import knn_classification, knn_regression
 from SVM import svm_classifier
 
-model = open('model','wb')
+model = open('gamemodel.mdl','wb')
 
 inp = int(input("Enter \n1.MLP Model\n2.KNN Model \n3.SVM Model\n"))
 
