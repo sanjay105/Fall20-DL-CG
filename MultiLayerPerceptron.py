@@ -64,7 +64,6 @@ def MLPClassification(ftype = None):
         C = confusion_matrix(y_test, y_pred)
         #Need to fix this
         C = C.astype(np.float)/C.astype(np.float).sum(axis=1)
-        print("Confusion Matrix: ")
         print(C)
         return clf
     return None
