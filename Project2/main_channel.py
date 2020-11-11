@@ -100,7 +100,7 @@ def main():
     # Saves the model to a file
     torch.save(model.state_dict(), '/home/sbanda/Fall20-DL-CG/Project2/Finale/models/model_channel.pkl')
     
-    colorizes the grayscale image in test set with the model
+    # colorizes the grayscale image in test set with the model
     colorize('/home/sbanda/Fall20-DL-CG/Project2/Finale/models/model_channel.pkl',test_channel_path)
 
 
