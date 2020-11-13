@@ -1,0 +1,44 @@
+/home/sbanda/Fall20-DL-CG/Project2/Finale
+c36a-s28.ufhpc
+Wed Nov 11 15:43:04 EST 2020
+Lmod has detected the following error: The following module(s) are unknown: "torch"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "torch"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown: "torchvision"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "torchvision"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+Running script
+Model Init Done
+Traceback (most recent call last):
+  File "/home/sbanda/Fall20-DL-CG/Project2/Finale/main_channel.py", line 108, in <module>
+    main()
+  File "/home/sbanda/Fall20-DL-CG/Project2/Finale/main_channel.py", line 104, in main
+    colorize('/home/sbanda/Fall20-DL-CG/Project2/Finale/models/model_channel.pkl',test_channel_path)
+  File "/home/sbanda/Fall20-DL-CG/Project2/Finale/predict.py", line 63, in colorize
+    losses = validateChannel(val_loader, model, criterion,res_path)
+  File "/home/sbanda/Fall20-DL-CG/Project2/Finale/utils.py", line 228, in validateChannel
+    grayImage,colorizedImage = convertToRGB(X[j].cpu(), ab_input=pred_ab[j].detach().cpu(), save_path=save_path, save_name=save_name)
+  File "/home/sbanda/Fall20-DL-CG/Project2/Finale/utils.py", line 68, in convertToRGB
+    plt.imsave(arr=grayImage, fname='{}{}'.format(save_path['grayscale'], save_name), cmap='gray')
+  File "/apps/python/3.7/lib/python3.7/site-packages/matplotlib/pyplot.py", line 2234, in imsave
+    return matplotlib.image.imsave(fname, arr, **kwargs)
+  File "/apps/python/3.7/lib/python3.7/site-packages/matplotlib/image.py", line 1591, in imsave
+    image.save(fname, **pil_kwargs)
+  File "/apps/python/3.7/lib/python3.7/site-packages/PIL/Image.py", line 2155, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/gray/img-0.jpg'
+Wed Nov 11 15:43:22 EST 2020

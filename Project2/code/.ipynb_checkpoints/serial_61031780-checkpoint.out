@@ -1,0 +1,55 @@
+/home/sbanda/Fall20-DL-CG/Project2/Finale
+c37a-s32.ufhpc
+Wed Nov 11 11:32:47 EST 2020
+Lmod has detected the following error: The following module(s) are unknown: "torch"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "torch"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown: "torchvision"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "torchvision"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+Running script
+Model Init Done
+Train Loader Done
+Starting training epoch 0
+Epoch: [0][0/126]	Time 1.656 (1.656)	Data 1.498 (1.498)	Loss 0.480693579 (0.480693579)	
+
+Epoch: [0][25/126]	Time 1.605 (1.608)	Data 1.457 (1.459)	Loss 0.005943276 (0.150140295)	
+
+Epoch: [0][50/126]	Time 1.587 (1.608)	Data 1.439 (1.459)	Loss 0.006094042 (0.079688668)	
+
+Epoch: [0][75/126]	Time 1.611 (1.606)	Data 1.462 (1.457)	Loss 0.005819133 (0.054482052)	
+
+Epoch: [0][100/126]	Time 1.604 (1.607)	Data 1.456 (1.458)	Loss 0.000909663 (0.041814544)	
+
+Epoch: [0][125/126]	Time 0.624 (1.598)	Data 0.543 (1.450)	Loss 0.001415516 (0.034006827)	
+
+Finished training epoch 0
+Starting training epoch 1
+Epoch: [1][0/126]	Time 1.599 (1.599)	Data 1.451 (1.451)	Loss 0.002228063 (0.002228063)	
+
+Epoch: [1][25/126]	Time 1.591 (1.587)	Data 1.441 (1.438)	Loss 0.000634381 (0.001460625)	
+
+Epoch: [1][50/126]	Time 1.592 (1.586)	Data 1.444 (1.437)	Loss 0.000700887 (0.001205233)	
+
+Epoch: [1][75/126]	Time 1.579 (1.585)	Data 1.431 (1.436)	Loss 0.000669758 (0.001069621)	
+
+Epoch: [1][100/126]	Time 1.590 (1.587)	Data 1.442 (1.438)	Loss 0.000773808 (0.001165199)	
+
+Epoch: [1][125/126]	Time 0.615 (1.579)	Data 0.534 (1.430)	Loss 0.000768706 (0.001177864)	
+
+Finished training epoch 1
+Wed Nov 11 11:39:38 EST 2020

@@ -1,0 +1,37 @@
+/home/sbanda/Fall20-DL-CG/Project2/Finale
+c36a-s28.ufhpc
+Wed Nov 11 15:44:43 EST 2020
+Lmod has detected the following error: The following module(s) are unknown: "torch"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "torch"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown: "torchvision"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "torchvision"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+Running script
+Model Init Done
+Traceback (most recent call last):
+  File "/home/sbanda/Fall20-DL-CG/Project2/Finale/main_channel.py", line 108, in <module>
+    main()
+  File "/home/sbanda/Fall20-DL-CG/Project2/Finale/main_channel.py", line 104, in main
+    colorize('/home/sbanda/Fall20-DL-CG/Project2/Finale/models/model_channel.pkl',test_channel_path)
+  File "/home/sbanda/Fall20-DL-CG/Project2/Finale/predict.py", line 63, in colorize
+    losses = validateChannel(val_loader, model, criterion,res_path)
+  File "/home/sbanda/Fall20-DL-CG/Project2/Finale/utils.py", line 230, in validateChannel
+    result.append(cv2.hconcat([grayImage,colorizedImage]))
+cv2.error: OpenCV(4.2.0) /io/opencv/modules/core/src/matrix_operations.cpp:68: error: (-215:Assertion failed) src[i].dims <= 2 && src[i].rows == src[0].rows && src[i].type() == src[0].type() in function 'hconcat'
+
+Wed Nov 11 15:44:54 EST 2020

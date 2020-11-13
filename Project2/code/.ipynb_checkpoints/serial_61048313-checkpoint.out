@@ -1,0 +1,29 @@
+/home/sbanda/Fall20-DL-CG/Project2/Finale
+c36a-s28.ufhpc
+Wed Nov 11 15:52:59 EST 2020
+Lmod has detected the following error: The following module(s) are unknown: "torch"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "torch"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown: "torchvision"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "torchvision"
+
+Also make sure that all modulefiles written in TCL start with the string #%Module
+
+
+
+Running script
+Model Init Done
+Validate: [0/1]	Time 0.368 (0.368)	Loss 0.001559612 (0.001559612)	
+Finished validation.
+0.0015596123412251472
+Wed Nov 11 15:53:10 EST 2020
